@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KitchenTable Budget — household money, sorted at the kitchen table</title>
+<meta name="description" content="A household budget site that runs offline: dashboard, budget planner, transaction ledger, savings goals, bills and debt tools with real worked-example figures.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#dashboard"><span class="brand-mark" aria-hidden="true">KT</span><span class="brand-name">KitchenTable <em>Budget</em></span></a>
+  <nav class="mainnav" aria-label="Main">
+    <a href="#dashboard" data-nav="dashboard">Dashboard</a>
+    <a href="#budget" data-nav="budget">Budget planner</a>
+    <a href="#ledger" data-nav="ledger">Ledger</a>
+    <a href="#goals" data-nav="goals">Savings goals</a>
+    <a href="#tools" data-nav="tools">Bills &amp; debt tools</a>
+  </nav>
+  <div class="monthbox">
+    <label for="monthPick">Month</label>
+    <select id="monthPick"></select>
+  </div>
+</header>
+<main id="app" class="page" tabindex="-1"></main>
+<footer class="foot">
+  <p>KitchenTable Budget runs entirely from its own files — no network, no account. Your edits stay in this browser. <button type="button" id="resetSample" class="linkbtn">Restore the worked example</button></p>
+</footer>
+<script type="module" src="main.js"></script>
+</body>
+</html>
